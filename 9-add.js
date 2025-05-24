@@ -1,4 +1,6 @@
-const add = function(a, b){
+
+function add(a = 0, b = 0) {
   console.log(a + b);
 }
-add(2, 4);
+
+add(Number(process.argv[2]), Number(process.argv[3]));
