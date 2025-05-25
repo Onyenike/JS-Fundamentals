@@ -4,5 +4,7 @@ if (isNaN(count) || count <= 0) {
   console.log("Missing number of occurrences");
 } else {
   for (let i = 0; i < count; i++) {
+    output += (i < count - 1) ? "c is fun\n" : "c is fun";
+  }
     console.log("C is fun");
   }
