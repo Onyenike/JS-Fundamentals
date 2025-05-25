@@ -1,7 +1,15 @@
-const count = parseInt(process.argv[2]);
+const {argv} = require('node:process');
 
-if (isNaN(count) || count <= 0) {
-  console.log("Missing number of occurrences");
-} else {
-  console.log(Array(count).fill("C is fun").join("\n"));
+const arr = [];
+argv.forEach((val) => {
+        arr.push(val);
+});
+
+let num = Number(arr[2]);
+if (isNaN(num)) {
+        console.log("Missing number of occurrences");
 }
+else
+        for(let i = 0; i < num; i++) {
+                console.log("C is fun");
+        }
